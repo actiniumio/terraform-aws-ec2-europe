@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  validate-plan:
+    docker:
+      - image: circleci/terraform:0.11.10
+    steps:
+      - checkout
+      - run:
+          name: Terraform Init
+          command: terraform init
+      - run:
+          name: Terraform Validate
+          command: terraform validate -var 'aws_access_key=$AWS_ACCESS_KEY' -var 'aws_secret_key=$AWS_SECRET_KEY' -var 'aws_region=eu-west-3'
+
+workflows:
+  version: 2
+  validate:
+    jobs:
+      - validate-plan
