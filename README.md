@@ -24,11 +24,11 @@ $ terraform apply -var 'aws_access_key=$AWS_ACCESS_KEY' -var 'aws_secret_key=$AW
 
 ## Variable
 
-| Variable       | Value - Sample    | Description         |
-| -------------- | ----------------- | ------------------- |
-| aws_access_key | $GCP_PROJECT-Name | Your AWS Access Key |
-| aws_secret_key | 1                 | Your AWS Secret Key |
-| aws_region     | See Appendix      | AWS Zone            |
+| Variable       | Value - Sample  | Description         |
+| -------------- | --------------- | ------------------- |
+| aws_access_key | $AWS_ACCESS_KEY | Your AWS Access Key |
+| aws_secret_key | $AWS_SECRET_KEY | Your AWS Secret Key |
+| aws_region     | eu-west-3       | AWS Zone - Paris    |
 
 
 ## Appendix
@@ -55,7 +55,11 @@ $ terraform apply -var 'aws_access_key=$AWS_ACCESS_KEY' -var 'aws_secret_key=$AW
 
 ### Supported Operating System - AWS AMI
 
-| OS       | toto |
-| -------- | ---- |
-| CentOS 7 |      |
-| Ubuntu   |      |
+| OS                   | toto                  |
+| -------------------- | --------------------- |
+| CentOS 7             |                       |
+| Ubuntu 14            |                       |
+| Fedora Cloud Base 29 | ami-0ee503641c4f61ba6 | 
+
+
+Fedora-Cloud-Base-29-1.2.x86_64-hvm-eu-west-3-standard-0 - ami-0ee503641c4f61ba6
