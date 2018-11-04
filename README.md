@@ -4,7 +4,7 @@
 
 ## Init
 
-> The Devops Team use this terraform plan to provision GCP with a CI/CD to test allspark.
+> The Devops Team use this terraform plan to provision AWS with a CI/CD to test allspark.
 
 This demonstrates the provisioning of a single compute VM(`t2.micro = 1vCPU / 1 Go `) in Amazon Web Service
 
